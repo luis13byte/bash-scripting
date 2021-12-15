@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install -y nmap net-tools yakuake colordiff htop docker.io mysql-client filezilla python3 gnupg software-properties-common curl terminator jq gparted git rkhunter virtualbox vagrant
+sudo apt update && sudo apt install -y nmap net-tools yakuake colordiff htop docker.io dnsutils mysql-client postgresql-client filezilla python3 gnupg software-properties-common curl terminator jq gparted git rkhunter virtualbox vagrant
 sudo snap install go --classic
 mkdir ~/Bucket/ ~/Docker/ ~/Scripts/ ~/TestArea/
 sudo mkdir -p /opt/git/luis13byte /opt/tools /opt/vagrant/ /backup/_special
