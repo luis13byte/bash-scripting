@@ -1,2 +1,2 @@
 # bash-scripting
-Bash scripts
+You will probably find more bash scripts in each specific project repository.
