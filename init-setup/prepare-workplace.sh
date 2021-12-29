@@ -21,10 +21,15 @@ git config --global core.excludesfile /opt/git/.gitignore_global
 sudo add-apt-repository ppa:mmstick76/alacritty && sudo apt install alacritty -y \
 && mkdir -p $HOME/.config/alacritty/
 
+# Custom tmux (Dracula Theme)
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
+&& wget https://raw.githubusercontent.com/luis13byte/dotfiles/master/tmux/.tmux.conf -O ~/.tmux.conf \
+&& echo "Necessary reload tmux environment. Press <prefix> + I (capital i) in tmux windows to install plugins."
+
 # Install docker-compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+&& sudo chmod +x /usr/local/bin/docker-compose \
+&& sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # Kubernetes tool
 wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
