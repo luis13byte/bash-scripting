@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt install -y nmap net-tools yakuake colordiff htop docker.io tmux dnsutils mysql-client postgresql-client filezilla python3 gnupg software-properties-common curl jq gparted git rkhunter virtualbox locate vagrant
-sudo snap install go --classic
+sudo snap install go --classic && echo "export PATH=$PATH;~/go/bin/" >> ~/.zshrc
 mkdir ~/Bucket/ ~/Docker/ ~/Scripts/ ~/TestArea/
 sudo mkdir -p /opt/git/luis13byte /opt/tools /opt/vagrant/ /backup/_special
 sudo chown ${USER}: /opt/git
