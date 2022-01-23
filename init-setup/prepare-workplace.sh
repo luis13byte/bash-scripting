@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install -y nmap net-tools tmux yakuake colordiff htop docker.io dnsutils mysql-client postgresql-client filezilla python3 gnupg software-properties-common curl jq gparted zsh git-core git rkhunter virtualbox locate vagrant
+sudo apt update && sudo apt install -y nmap tree net-tools tmux yakuake colordiff htop docker.io dnsutils mysql-client postgresql-client filezilla python3 gnupg software-properties-common curl jq gparted zsh git-core git rkhunter virtualbox locate vagrant
 sudo snap install go --classic && echo "export PATH=$HOME/bin:/usr/local/bin:$HOME/go/bin:$PATH" >> ~/.zshrc
 mkdir ~/Bucket/ ~/Docker/ ~/Scripts/ ~/TestArea/
 sudo mkdir -p /opt/git/luis13byte /opt/tools /opt/vagrant/ /backup/_special
@@ -35,3 +35,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
 tar xf kubeval-linux-amd64.tar.gz
 sudo cp kubeval /usr/local/bin
+
+# Install Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/install-chrome.deb \
+&& sudo apt install /tmp/install-chrome.deb
