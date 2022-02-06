@@ -26,12 +26,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
 && wget https://raw.githubusercontent.com/luis13byte/dotfiles/master/tmux/.tmux.conf -O ~/.tmux.conf \
 && echo "Necessary reload tmux environment. Press <prefix> + I (capital i) in tmux windows to install plugins."
 
-# Install docker-compose
+# Config docker and install docker-compose
+sudo usermod -aG docker $USER
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
 && sudo chmod +x /usr/local/bin/docker-compose \
 && sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-# Kubernetes tool
+# Install Kubeval tool
 wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
 tar xf kubeval-linux-amd64.tar.gz
 sudo cp kubeval /usr/local/bin
@@ -39,3 +40,9 @@ sudo cp kubeval /usr/local/bin
 # Install Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/install-chrome.deb \
 && sudo apt install /tmp/install-chrome.deb
+
+# Install Podman
+source /etc/os-release
+sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list"
+wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key -O- | apt-key add -
+sudo apt update -qq && sudo apt-get -qq --yes install podman
