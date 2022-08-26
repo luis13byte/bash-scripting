@@ -20,7 +20,7 @@ gitConfig() {
   .idea/
   .vscode/
   .history/
-  EOF
+EOF
 
   sudo chown ${USER}: /opt/git/ /opt/vagrant/ /backup/ -R
   git config --global core.excludesfile /opt/git/.gitignore_global
