@@ -7,7 +7,7 @@ readonly GIT_USER="luis13byte"
 
 installPackages() {
   sudo add-apt-repository ppa:shutter/ppa
-  sudo apt-get update && sudo apt-get install -y nmap tree vlc net-tools tmux clipit colordiff htop docker.io dnsutils mysql-client postgresql-client filezilla python3 \
+  sudo apt-get update && sudo apt-get install -y nmap tree vlc clipit net-tools tmux clipit colordiff htop docker.io dnsutils mysql-client postgresql-client filezilla python3 \
     gnupg software-properties-common curl jq gparted zsh git-core git rkhunter locate shutter
 
   # Snap Installs
