@@ -1,0 +1,14 @@
+winget install Google.Chrome
+winget install Mozilla.Firefox
+winget install VideoLAN.VLC
+winget install Discord.Discord
+winget install -e --id Obsidian.Obsidian
+winget install -e --id Canonical.Ubuntu.2204
+
+# work
+winget install -e --id Microsoft.AzureDataStudio
+winget install -e --id Mirantis.Lens
+
+# direct installation
+https://claude.ai/download
+https://www.cursor.com/downloads
