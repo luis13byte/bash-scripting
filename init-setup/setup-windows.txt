@@ -4,13 +4,15 @@ winget install -e --id Discord.Discord
 winget install -e --id Obsidian.Obsidian
 winget install -e --id Canonical.Ubuntu.2204
 winget install -e --id OpenJS.NodeJS.LTS
+winget install -e --id RARLab.WinRAR
 
 # work
 winget install -e --id Microsoft.AzureDataStudio
 winget install -e --id Mirantis.Lens
 winget install -e --id Docker.DockerDesktop
-winget install -e --id Kubernetes.kubectl
-winget install -e --id Ngrok.Ngrok
+
+#winget install -e --id Kubernetes.kubectl
+#winget install -e --id Ngrok.Ngrok
 
 # direct installation
 https://claude.ai/download
