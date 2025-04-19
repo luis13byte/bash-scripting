@@ -8,6 +8,9 @@ winget install -e --id OpenJS.NodeJS.LTS
 # work
 winget install -e --id Microsoft.AzureDataStudio
 winget install -e --id Mirantis.Lens
+winget install -e --id Docker.DockerDesktop
+winget install -e --id Kubernetes.kubectl
+winget install -e --id Ngrok.Ngrok
 
 # direct installation
 https://claude.ai/download
