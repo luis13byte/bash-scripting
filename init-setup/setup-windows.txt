@@ -1,6 +1,5 @@
 winget install Google.Chrome
 winget install Mozilla.Firefox
-winget install VideoLAN.VLC
 winget install Discord.Discord
 winget install -e --id Obsidian.Obsidian
 winget install -e --id Canonical.Ubuntu.2204
