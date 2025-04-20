@@ -6,6 +6,7 @@ winget install -e --id Canonical.Ubuntu.2204
 winget install -e --id OpenJS.NodeJS.LTS
 winget install -e --id RARLab.WinRAR
 winget install -e --id Git.Git
+winget install -e --id Warp.Warp
 
 # work
 winget install -e --id Microsoft.AzureDataStudio
