@@ -8,6 +8,8 @@ winget install -e --id RARLab.WinRAR
 winget install -e --id Git.Git
 winget install -e --id Warp.Warp
 
+iwr https://get.pnpm.io/install.ps1 -useb | iex
+
 # work
 winget install -e --id Microsoft.AzureDataStudio
 winget install -e --id Mirantis.Lens
